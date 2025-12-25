@@ -4,9 +4,15 @@ import OpenAI from "openai";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Initialize OpenAI client only if API key is available
+const getOpenAIClient = () => {
+  if (!process.env.OPENAI_API_KEY) {
+    return null;
+  }
+  return new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+  });
+};
 
 export async function POST(request: NextRequest) {
   try {
@@ -14,7 +20,8 @@ export async function POST(request: NextRequest) {
     const { atsScore, issues, rawFindings } = body;
 
     // Fallback explanation if OpenAI is not configured
-    if (!process.env.OPENAI_API_KEY) {
+    const openai = getOpenAIClient();
+    if (!openai) {
       return NextResponse.json({
         explanation: generateFallbackExplanation(atsScore, issues, rawFindings),
       });

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SidebarAd, BottomBannerAd } from "@/components/AdSense";
 
 export const metadata: Metadata = {
-  title: "Contact Us - ATS Scanner",
-  description: "Contact ATS Scanner for support, questions, or feedback about our resume scanning service.",
+  title: "Contact Us - Resumaze",
+  description: "Contact Resumaze for support, questions, or feedback about our resume scanning service.",
 };
 
 export default function ContactPage() {
@@ -14,7 +14,7 @@ export default function ContactPage() {
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <a href="/" className="text-xl font-bold text-indigo-600">ATS Scanner</a>
+            <a href="/" className="text-xl font-bold text-indigo-600">Resumaze</a>
             <a href="/" className="text-gray-600 hover:text-indigo-600">Home</a>
           </div>
         </div>

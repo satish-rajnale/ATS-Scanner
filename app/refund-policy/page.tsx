@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SidebarAd, BottomBannerAd } from "@/components/AdSense";
 
 export const metadata: Metadata = {
-  title: "Refund Policy - ATS Scanner",
-  description: "Refund policy for ATS Scanner premium reports. Learn about our refund terms and conditions.",
+  title: "Refund Policy - Resumaze",
+  description: "Refund policy for Resumaze premium reports. Learn about our refund terms and conditions.",
 };
 
 export default function RefundPolicyPage() {
@@ -14,7 +14,7 @@ export default function RefundPolicyPage() {
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <a href="/" className="text-xl font-bold text-indigo-600">ATS Scanner</a>
+            <a href="/" className="text-xl font-bold text-indigo-600">Resumaze</a>
             <a href="/" className="text-gray-600 hover:text-indigo-600">Home</a>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function RefundPolicyPage() {
           <h2 className="text-3xl font-bold text-black mt-8 mb-4">Overview</h2>
           
           <p className="text-gray-700 mb-4">
-            At ATS Scanner, we offer a one-time payment service for unlocking full resume analysis reports. This refund policy outlines the terms and conditions for refunds.
+            At Resumaze, we offer a one-time payment service for unlocking full resume analysis reports. This refund policy outlines the terms and conditions for refunds.
           </p>
 
           <h2 className="text-3xl font-bold text-black mt-8 mb-4">Refund Eligibility</h2>

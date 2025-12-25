@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SidebarAd, BottomBannerAd } from "@/components/AdSense";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - ATS Scanner",
-  description: "Privacy policy for ATS Scanner. Learn how we handle your resume data and protect your privacy.",
+  title: "Privacy Policy - Resumaze",
+  description: "Privacy policy for Resumaze. Learn how we handle your resume data and protect your privacy.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <a href="/" className="text-xl font-bold text-indigo-600">ATS Scanner</a>
+            <a href="/" className="text-xl font-bold text-indigo-600">Resumaze</a>
             <a href="/" className="text-gray-600 hover:text-indigo-600">Home</a>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
           <h2 className="text-3xl font-bold text-black mt-8 mb-4">Introduction</h2>
           
           <p className="text-gray-700 mb-4">
-            At ATS Scanner, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our resume scanning service.
+            At Resumaze, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our resume scanning service.
           </p>
 
           <h2 className="text-3xl font-bold text-black mt-8 mb-4">Information We Collect</h2>

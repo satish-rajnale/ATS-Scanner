@@ -5,7 +5,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "", {
-  apiVersion: "2024-06-20",
+  apiVersion: "2023-10-16",
 });
 
 export async function POST(request: NextRequest) {
@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
           price_data: {
             currency: "usd",
             product_data: {
-              name: "ATS Scanner - Full Report",
+              name: "Resumaze - Full Report",
               description: "Unlock full ATS analysis with AI-powered explanations and all detected issues",
             },
             unit_amount: 399, // $3.99 in cents

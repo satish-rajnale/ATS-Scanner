@@ -11,8 +11,8 @@ export function WebsiteStructuredData() {
   const data = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: "ATS Resume Scanner",
-    description: "Free ATS resume scanner that analyzes your resume for applicant tracking system compatibility. Get instant ATS scores and improvement suggestions.",
+    name: "Resumaze",
+    description: "Resumaze: Free AI-powered ATS resume checker that analyzes your resume for applicant tracking system compatibility. Get instant ATS scores and improvement suggestions.",
     url: process.env.NEXT_PUBLIC_BASE_URL || "https://your-app.vercel.app",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
@@ -67,11 +67,11 @@ export function ArticleStructuredData({
     datePublished,
     author: {
       "@type": "Organization",
-      name: author || "ATS Scanner",
+      name: author || "Resumaze",
     },
     publisher: {
       "@type": "Organization",
-      name: "ATS Scanner",
+      name: "Resumaze",
     },
   };
 

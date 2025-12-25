@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SidebarAd, BottomBannerAd } from "@/components/AdSense";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - ATS Scanner",
-  description: "Terms of service for ATS Scanner. Read our terms and conditions for using our resume scanning service.",
+  title: "Terms of Service - Resumaze",
+  description: "Terms of service for Resumaze. Read our terms and conditions for using our resume scanning service.",
 };
 
 export default function TermsPage() {
@@ -14,7 +14,7 @@ export default function TermsPage() {
       <nav className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <a href="/" className="text-xl font-bold text-indigo-600">ATS Scanner</a>
+            <a href="/" className="text-xl font-bold text-indigo-600">Resumaze</a>
             <a href="/" className="text-gray-600 hover:text-indigo-600">Home</a>
           </div>
         </div>
@@ -29,13 +29,13 @@ export default function TermsPage() {
           <h2 className="text-3xl font-bold text-black mt-8 mb-4">Acceptance of Terms</h2>
           
           <p className="text-gray-700 mb-4">
-            By accessing and using ATS Scanner, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service.
+            By accessing and using Resumaze, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service.
           </p>
 
           <h2 className="text-3xl font-bold text-black mt-8 mb-4">Description of Service</h2>
           
           <p className="text-gray-700 mb-4">
-            ATS Scanner is a web-based service that analyzes resumes for Applicant Tracking System (ATS) compatibility. We provide:
+            Resumaze is a web-based service that analyzes resumes for Applicant Tracking System (ATS) compatibility. We provide:
           </p>
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
             <li>Free basic ATS score and keyword matching analysis</li>
@@ -93,7 +93,7 @@ export default function TermsPage() {
           <h2 className="text-3xl font-bold text-black mt-8 mb-4">Intellectual Property</h2>
           
           <p className="text-gray-700 mb-4">
-            The ATS Scanner service, including its design, functionality, and content, is owned by us and protected by intellectual property laws. You may not:
+            The Resumaze service, including its design, functionality, and content, is owned by us and protected by intellectual property laws. You may not:
           </p>
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
             <li>Copy, modify, or distribute our service</li>

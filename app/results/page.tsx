@@ -79,6 +79,7 @@ function ResultsContent() {
       router.push("/");
     }
     setLoading(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams, router]);
 
   const loadFullReport = async () => {
@@ -173,7 +174,19 @@ function ResultsContent() {
     );
   }
 
-  const rawFindings = results.rawFindings || {};
+  const rawFindings = results.rawFindings || {
+    hasContactInfo: false,
+    hasExperience: false,
+    hasEducation: false,
+    hasSkills: false,
+    hasSummary: false,
+    isImageOnly: false,
+    hasTables: false,
+    hasColumns: false,
+    pageCount: 1,
+    keywordMatches: 0,
+    totalKeywords: 0,
+  };
 
   // Calculate section data
   const getSectionsData = (): SectionData => {
@@ -440,7 +453,7 @@ function ResultsContent() {
 
   const scoreColors = getScoreColor(results.atsScore);
   const totalIssues = results.detectedIssues.length;
-  const criticalIssues = results.detectedIssues.filter((i) => i.severity === "high").length;
+  const criticalIssues = totalIssues; // All detected issues are considered critical
 
   const SectionCard = ({
     id,
@@ -656,7 +669,7 @@ function ResultsContent() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <a href="/" className="text-xl font-bold text-indigo-600">
-              ATS Scanner
+              Resumaze
             </a>
             <a href="/" className="text-sm text-gray-600 hover:text-indigo-600">
               Scan Another Resume

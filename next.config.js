@@ -5,8 +5,6 @@ const nextConfig = {
       bodySizeLimit: '10mb',
     },
   },
-  // Optimize for Vercel deployment
-  output: 'standalone',
   // Enable image optimization
   images: {
     formats: ['image/avif', 'image/webp'],
